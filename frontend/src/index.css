@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
+}
+
+/* React Quill Editor Styles */
+.ql-container {
+  @apply min-h-[300px] border-gray-300 dark:border-gray-700;
+}
+
+.ql-editor {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+.ql-toolbar {
+  @apply bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700;
+}
+
+.ql-stroke {
+  @apply stroke-gray-700 dark:stroke-gray-300;
+}
+
+.ql-fill {
+  @apply fill-gray-700 dark:fill-gray-300;
+}
+
+.ql-picker-label {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+/* React Datepicker Styles */
+.react-datepicker {
+  @apply bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700;
+}
+
+.react-datepicker__header {
+  @apply bg-gray-100 dark:bg-gray-700 border-b-gray-300 dark:border-b-gray-600;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+.react-datepicker__day {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-gray-200 dark:bg-gray-600;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-primary-600 dark:bg-primary-500;
+}
+
+/* Toast Notifications */
+.Toastify__toast {
+  @apply dark:bg-gray-800 dark:text-gray-100;
+}
+
+.Toastify__toast--success {
+  @apply dark:bg-green-800;
+}
+
+.Toastify__toast--error {
+  @apply dark:bg-red-800;
+}
+
+.Toastify__toast--warning {
+  @apply dark:bg-yellow-800;
+}
